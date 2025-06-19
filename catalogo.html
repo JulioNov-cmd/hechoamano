@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Sombreros</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background-color: #f0fdf4;
+      font-family: Arial, sans-serif;
+    }
+    .producto {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #cde8d6;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+      background-color: #ffffff;
+    }
+    .producto img {
+      max-width: 220px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .producto img:hover {
+      transform: scale(1.05);
+    }
+    .producto-info {
+      flex: 1;
+    }
+    .producto-info h3 {
+      margin-top: 0;
+      padding: 5px 10px;
+      background-color: #d0f0c0;
+      border-radius: 6px;
+      display: inline-block;
+      color: #14532d;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .producto-info h3:hover {
+      background-color: #14532d;
+      color: #fff;
+    }
+    .producto-info p {
+      margin: 8px 0;
+      color: #333;
+    }
+    .boton {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background-color: #25D366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .boton:hover {
+      background-color: #1ebd5a;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+      animation: fadeIn 0.5s ease;
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      animation: zoomIn 0.4s ease;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes zoomIn {
+      from {transform: scale(0.7); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <img src="imagenes/A_banner_for_Hecho_a_Mano_Tlape_features_an_arti.png" alt="Banner Hecho a Mano Tlape" width="94%" height="541" class="banner" style="width: auto; height: auto; display: block; margin-bottom: 10px;">
+  <h1>Catálogo de Sombreros</h1>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Nuestra Historia</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="catalogo">
+      <h2>Nuestros modelos</h2>
+      <div class="galeria">
+        <!-- Productos 1 al 10 -->
+        <!-- Producto 1 -->
+        <div class="producto">
+          <img src="imagenes/sombrero01.png" alt="Sombrero Tradicional 1" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Tradicional #1</h3>
+            <p>Hecho a mano con palma natural. Ideal para eventos y uso diario.</p>
+            <p><strong>Precio:</strong> $350 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Tradicional%201" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="producto">
+          <img src="imagenes/sombrero02.png" alt="Sombrero Tradicional 2" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Tradicional #2</h3>
+            <p>Diseño trenzado fino con ala ancha para mayor protección solar.</p>
+            <p><strong>Precio:</strong> $420 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Tradicional%202" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="producto">
+          <img src="imagenes/sombrero03.png" alt="Sombrero Elegante" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Elegante</h3>
+            <p>Modelo elegante, acabado detallado, ideal para celebraciones formales.</p>
+            <p><strong>Precio:</strong> $1500 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Elegante" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="producto">
+          <img src="imagenes/sombrero04.png" alt="Sombrero Ranchero" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Ranchero</h3>
+            <p>Clásico estilo vaquero con refuerzo en la copa.</p>
+            <p><strong>Precio:</strong> $1000 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Ranchero" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 5 -->
+        <div class="producto">
+          <img src="imagenes/sombrero05.png" alt="Sombrero Casual" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Casual</h3>
+            <p>Diseño ligero y fresco para uso diario en temporada de calor.</p>
+            <p><strong>Precio:</strong> $350 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Casual" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 6 -->
+        <div class="producto">
+          <img src="imagenes/sombrero06.png" alt="Sombrero Infantil" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Infantil</h3>
+            <p>Pequeño y ligero, perfecto para niños. Diseños divertidos.</p>
+            <p><strong>Precio:</strong> $250 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Infantil" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 7 -->
+        <div class="producto">
+          <img src="imagenes/sombrero07.png" alt="Sombrero Festivo" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Festivo</h3>
+            <p>Decorado con cintas de colores, ideal para fiestas y ferias.</p>
+            <p><strong>Precio:</strong> $480 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Festivo" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 8 -->
+        <div class="producto">
+          <img src="imagenes/sombrero08.png" alt="Sombrero Estilo Playa" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Estilo Playa</h3>
+            <p>Ala ancha, protección solar máxima, ideal para el descanso.</p>
+            <p><strong>Precio:</strong> $500 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Estilo%20Playa" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 9 -->
+        <div class="producto">
+          <img src="imagenes/sombrero09.png" alt="Sombrero Regional" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero Regional</h3>
+            <p>Diseño inspirado en las danzas tradicionales de Guerrero, pintado a mano.</p>
+            <p><strong>Precio:</strong> $720 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20Regional" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+        <!-- Producto 10 -->
+        <div class="producto">
+          <img src="imagenes/sombrero10.png" alt="Sombrero de Gala" width="947" height="627" align="middle">
+          <div class="producto-info">
+            <h3>Sombrero de Gala</h3>
+            <p>Acabado fino con detalles exclusivos. Para eventos especiales.</p>
+            <p><strong>Precio:</strong> $1200 MXN</p>
+            <a class="boton" href="https://wa.me/527326730009?text=Hola,%20estoy%20interesado%20en%20el%20Sombrero%20de%20Gala" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para ampliar imagen -->
+  <div id="miModal" class="modal">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>	
+
+  <footer>
+    <p>&copy; 2025 Hecho a Mano Tlape. Desde Tlapehuala al mundo.</p>
+  </footer>
+<script>
+    const imagenes = document.querySelectorAll('.producto img');
+    const modal = document.getElementById('miModal');
+    const modalImg = document.getElementById('imgModal');
+
+    imagenes.forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+
+    function cerrarModal() {
+      modal.style.display = "none";
+    }
+
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        cerrarModal();
+      }
+    });
+  </script>
+</body>
+</html>
+

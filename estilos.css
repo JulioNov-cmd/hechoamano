@@ -1,0 +1,92 @@
+/* estilos.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5ef;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #fff8e1;
+  padding: 20px;
+}
+
+.banner {
+  display: block;
+  margin: 0 auto 10px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+h1 {
+  color: #8B5E3C; /* café oscuro */
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  color: #A0784F; /* tono más claro del escudo */
+}
+
+nav {
+  background-color: #5D4037;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff3e0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe0b2;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff3e0;
+  border-top: 4px solid #8B5E3C;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #A0784F;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #8B5E3C;
+}
+
+footer {
+  text-align: center;
+  background-color: #5D4037;
+  color: #fff3e0;
+  padding: 15px;
+  font-size: 0.9em;
+}

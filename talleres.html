@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talleres Artesanales</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background-color: #f4fbf7;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    h1 {
+      text-align: center;
+      margin: 10px 0;
+      color: #14532d;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #d0f0c0;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #14532d;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .taller {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #cce3d4;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 128, 0, 0.05);
+    }
+    .taller h3 {
+      margin-top: 0;
+      color: #1b4332;
+    }
+    .galeria {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .galeria img {
+      width: 30%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e6f2ea;
+      color: #14532d;
+    }
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+  <img src="imagenes/A_banner_for_Hecho_a_Mano_Tlape_features_an_arti.png" alt="Banner Hecho a Mano Tlape" style="flex: 1 1 60%; max-width: 60%; height: auto;">
+  <div style="flex: 1 1 35%; max-width: 35%;">
+    <video width="100%" height="auto" controls>
+      <source src="videos/video2.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Nuestra Historia</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <div class="taller">
+        <h3>Introducción al Tejido de Palma</h3>
+        <p>Conoce las técnicas tradicionales para iniciar la elaboración de sombreros artesanales con palma natural. Este taller está orientado a jóvenes de la comunidad interesados en preservar la herencia cultural de Tlapehuala.</p>
+        <div class="galeria">
+          <img src="imagenes/taller1b.jpg" alt="Taller Tejido Palma 2">
+          <img src="imagenes/taller1c.png" alt="Taller Tejido Palma 3" style="width: 60%; height: auto; display: block; margin: auto;">
+        </div>
+      </div>
+      <div class="taller">
+        <h3>Perfeccionamiento de Técnicas de Tejido</h3>
+        <p>Diseñado para artesanos con experiencia que desean mejorar la calidad, rapidez y variedad de diseños. Incluye sesiones con maestros sombrereros locales y retroalimentación directa.</p>
+        <div style="text-align: center; margin-top: 15px;">
+          <video width="80%" height="auto" controls>
+            <source src="videos/video4.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+      </div>
+      <div class="taller">
+        <h3>Innovación y Comercialización</h3>
+        <p>Explora nuevas formas de diseño y promoción de los sombreros a través de redes sociales y plataformas de venta en línea. Se promueve la creación de una marca colectiva de identidad local.</p>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div style="flex: 1 1 100%; text-align: center;">
+            <video width="80%" height="auto" controls>
+              <source src="videos/video3.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="taller">
+        <h3>Formulario de Inscripción a Talleres</h3>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 12px;">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+
+          <label for="taller">Taller de interés:</label>
+          <select id="taller" name="taller">
+            <option value="tejido">Introducción al Tejido de Palma</option>
+            <option value="perfeccionamiento">Perfeccionamiento de Técnicas de Tejido</option>
+            <option value="innovacion">Innovación y Comercialización</option>
+          </select>
+
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+          <button type="submit" style="padding: 10px; background-color: #14532d; color: white; border: none; border-radius: 6px; cursor: pointer;">Enviar inscripción</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hecho a Mano Tlape. Desde Tlapehuala al mundo.</p>
+  </footer>
+</body>
+</html>

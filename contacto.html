@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background-color: #e6fff3;
+      font-family: 'Arial', sans-serif;
+      color: #1b4332;
+      margin: 0;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #d0f0c0;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #14532d;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    .info-contacto {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+    .info-contacto p {
+      margin: 10px 0;
+    }
+    h2 {
+      color: #0b3d1b;
+      margin-bottom: 20px;
+    }
+    video {
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      max-width: 720px;
+    }
+  </style>
+</head>
+<body>
+   <header>
+  <img src="imagenes/A_banner_for_Hecho_a_Mano_Tlape_features_an_arti.png" alt="Banner Hecho a Mano Tlape" width="94%" height="541" class="banner" style="width: auto; height: auto; display: block; margin-bottom: 10px;">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Nuestra Historia</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="talleres.html">Talleres</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="info-contacto">
+      <h2>Contáctanos</h2>
+      <p><strong>Dirección:</strong> Calle Zaragoza, Colonia Centro, Tlapehuala, Guerrero, México</p>
+      <p><strong>Teléfono:</strong> 733-118-2312</p>
+      <p><strong>Correo electrónico:</strong> hechoamano@tlape.org</p>
+    </section>
+
+    <section>
+      <h2>Tlapehuala es Cultura</h2>
+      <video controls>
+        <source src="videos/video5.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </section>
+
+    <section>
+      <h2>Formulario de Compra</h2>
+      <form action="#" method="post" style="max-width: 600px; margin: auto; text-align: left;">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px; margin-bottom: 12px;"><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required style="width: 100%; padding: 8px; margin-bottom: 12px;"><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required style="width: 100%; padding: 8px; margin-bottom: 12px;"><br>
+
+        <label for="producto">Producto deseado:</label><br>
+        <input type="text" id="producto" name="producto" required style="width: 100%; padding: 8px; margin-bottom: 12px;"><br>
+
+        <label for="direccion">Dirección de envío:</label><br>
+        <textarea id="direccion" name="direccion" rows="4" required style="width: 100%; padding: 8px; margin-bottom: 12px;"></textarea><br>
+
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="3" style="width: 100%; padding: 8px; margin-bottom: 16px;"></textarea><br>
+
+        <button type="submit" style="background-color: #1b4332; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar Pedido</button>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p style="text-align:center; padding:20px; background-color:#d0f0c0; color:#14532d">&copy; 2025 Hecho a Mano Tlape</p>
+  </footer>
+</body>
+</html>
